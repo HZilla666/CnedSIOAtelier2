@@ -6,10 +6,20 @@ using System.Threading.Tasks;
 
 namespace Atelier2.model
 {
+    /// <summary>
+    /// Classe métier interne pour les motifs
+    /// </summary>
     public class Motif
     {
+        /// <summary>
+        /// Identifiant unique du motif.
+        /// </summary>
         public int IdMotif { get; }
-        public string Libelle{ get; }
+
+        /// <summary>
+        /// Libellé descriptif du motif (exemple : "Maladie", "Congé", etc.).
+        /// </summary>
+        public string Libelle { get; }
 
         /// <summary>
         /// Valorise les propriétés
@@ -32,4 +42,4 @@ namespace Atelier2.model
         }
     }
 }
-}
+

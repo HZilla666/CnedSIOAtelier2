@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Atelier2.dal
 {
+    /// <summary>
+    /// Classe permettant de gérer les demandes concernant les Absences
+    /// </summary>
     public class AbsenceAccess
     {
     }

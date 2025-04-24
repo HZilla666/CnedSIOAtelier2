@@ -6,9 +6,19 @@ using System.Threading.Tasks;
 
 namespace Atelier2.model
 {
+    /// <summary>
+    /// Classe métier interne pour les services
+    /// </summary>
     public class Service
     {
+        /// <summary>
+        /// Identifiant unique du service.
+        /// </summary>
         public int IdService { get; }
+
+        /// <summary>
+        /// Nom du service (exemple : Ressources Humaines, Informatique, etc.).
+        /// </summary>
         public string Nom { get; }
 
         /// <summary>
@@ -32,4 +42,4 @@ namespace Atelier2.model
         }
     }
 }
-}
+

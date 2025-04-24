@@ -10,8 +10,14 @@ using System.Windows.Forms;
 
 namespace Atelier2.view
 {
+    /// <summary>
+    /// Fenêtre d'affichage des absences et de leurs motifs
+    /// </summary>
     public partial class FormAbsence: Form
     {
+        /// <summary>
+        /// construction des composants graphiques et appel des autres initialisations
+        /// </summary>
         public FormAbsence()
         {
             InitializeComponent();

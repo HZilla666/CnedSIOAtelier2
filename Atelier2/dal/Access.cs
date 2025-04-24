@@ -5,8 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Atelier2.dal
 {
+    /// <summary>
+    /// Singleton : classe d'accès à BddManager
+    /// </summary>
     public class Access
     {
         /// <summary>

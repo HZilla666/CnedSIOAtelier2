@@ -8,10 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Atelier2.view
 {
+    /// <summary>
+    /// Fenêtre d'affichage des personnels et de leurs services
+    /// </summary>
     public partial class FormPersonnel: Form
     {
+        /// <summary>
+        /// construction des composants graphiques et appel des autres initialisations
+        /// </summary>
         public FormPersonnel()
         {
             InitializeComponent();

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Atelier2.controller
 {
-    public class FormAtelier2Controller
+    /// <summary>
+    /// Contrôleur de FrmAutentification
+    /// </summary>
+    public class FormAtentificationController
     {
     }
 }
