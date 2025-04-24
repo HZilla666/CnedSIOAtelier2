@@ -11,30 +11,27 @@ namespace Atelier2.model
         /// <summary>
         /// Valorise les propriétés
         /// </summary>
-        /// <param name="idDeveloppeur"></param>
+        /// <param name="idpersonnel"></param>
         /// <param name="nom"></param>
         /// <param name="prenom"></param>
         /// <param name="tel"></param>
         /// <param name="mail"></param>
-        /// <param name="pwd"></param>
-        /// <param name="profil"></param>
-        public Developpeur(int iddeveloppeur, string nom, string prenom, string tel, string mail, Profil profil)
+        /// <param name="service"></param>
+        public Personnel(int idpersonnel, string nom, string prenom, string tel, string mail, Service service)
         {
-            this.Iddeveloppeur = iddeveloppeur;
+            this.IdPersonnel = idpersonnel;
             this.Nom = nom;
             this.Prenom = prenom;
             this.Tel = tel;
             this.Mail = mail;
-            this.Pwd = Pwd;
-            this.Profil = profil;
+            this.Service = service;
         }
 
-        public int Idpersonnel{ get; }
+        public int IdPersonnel{ get; }
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public string Tel { get; set; }
         public string Mail { get; set; }
-        public string Idservice { get; set; }
-        public Profil Profil { get; set; }
+        public Service Service { get; set; }
     }
 }

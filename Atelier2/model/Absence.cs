@@ -8,28 +8,24 @@ namespace Atelier2.model
 {
     public class Absence
     {
-        public int Idprofil { get; }
-        public string Nom { get; }
-
         /// <summary>
         /// Valorise les propriétés
         /// </summary>
-        /// <param name="idprofil"></param>
-        /// <param name="nom"></param>
-        public Absence(int idabsence, string nom)
+        /// <param name="idpersonnel"></param>
+        /// <param name="datedebut"></param>
+        /// <param name="datefin"></param>
+        /// <param name="motif"></param>
+        public Developpeur(int idpersonnel, string datedebut, string datefin,Motif motif)
         {
-            this.Idprofil = idprofil;
-            this.Nom = nom;
+            this.IdPersonnel = idpersonnel;
+            this.DateDebut = datedebut;
+            this.DateFin = datefin;
+            this.Motif = motif;
         }
 
-        /// <summary>
-        /// Définit l'information à afficher (juste le nom)
-        /// </summary>
-        /// <returns>nom du profil</returns>
-        public override string ToString()
-        {
-            return this.Nom;
-        }
+        public int IdPersonnel{ get; set; }
+        public string DateDebut { get; set; }
+        public string DateFin { get; set; }
+        public Motif Motif { get; set; }
     }
-}
 }

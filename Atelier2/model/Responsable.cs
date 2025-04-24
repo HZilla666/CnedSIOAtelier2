@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Atelier2.model
 {
-    public class Admin
+    public class Responsable
     {
-        public string Login { get; }
-        public string Pwd { get; }
-
         /// <summary>
         /// Valorise les propriétés
         /// </summary>
         /// <param name="login"></param>
         /// <param name="pwd"></param>
-        public Admin(string login, string pwd)
+        public Responsable(string login)
         {
             this.Login = login;
             this.Pwd = pwd;
         }
+
+        public string Login { get; set; }
+        public string Pwd { get; set; }
     }
 }
