@@ -51,31 +51,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bddmanager\BddManager.cs" />
+    <Compile Include="controller\FormAutentificationController.cs" />
     <Compile Include="controller\FormAtelier2Controller.cs" />
     <Compile Include="dal\AbsenceAccess.cs" />
     <Compile Include="dal\Access.cs" />
     <Compile Include="dal\PersonnelAccess.cs" />
+    <Compile Include="model\Admin.cs" />
     <Compile Include="model\Absence.cs" />
     <Compile Include="model\Personnel.cs" />
-    <Compile Include="view\FormAcceuil.cs">
+    <Compile Include="view\FormAbsence.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\FormAcceuil.Designer.cs">
-      <DependentUpon>FormAcceuil.cs</DependentUpon>
+    <Compile Include="view\FormAbsence.Designer.cs">
+      <DependentUpon>FormAbsence.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\FormAtelier2.cs">
+    <Compile Include="view\FormAutentification.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\FormAtelier2.Designer.cs">
-      <DependentUpon>FormAtelier2.cs</DependentUpon>
+    <Compile Include="view\FormAutentification.Designer.cs">
+      <DependentUpon>FormAutentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormPersonnel.Designer.cs">
+      <DependentUpon>FormPersonnel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="view\FormAcceuil.resx">
-      <DependentUpon>FormAcceuil.cs</DependentUpon>
+    <EmbeddedResource Include="view\FormAbsence.resx">
+      <DependentUpon>FormAbsence.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\FormAtelier2.resx">
-      <DependentUpon>FormAtelier2.cs</DependentUpon>
+    <EmbeddedResource Include="view\FormAutentification.resx">
+      <DependentUpon>FormAutentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormPersonnel.resx">
+      <DependentUpon>FormPersonnel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

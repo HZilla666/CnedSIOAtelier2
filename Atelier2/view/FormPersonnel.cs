@@ -7,14 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-
 
 namespace Atelier2.view
 {
-    public partial class FormAtelier2: Form
+    public partial class FormPersonnel: Form
     {
-        public FormAtelier2()
+        public FormPersonnel()
         {
             InitializeComponent();
         }

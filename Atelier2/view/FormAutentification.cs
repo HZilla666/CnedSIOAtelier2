@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Atelier2.view
 {
-    public partial class FormAcceuil: Form
+    public partial class FormAutentification: Form
     {
-        public FormAcceuil()
+        public FormAutentification()
         {
             InitializeComponent();
         }
