@@ -57,6 +57,7 @@
     <Compile Include="controller\FormPersonnelController.cs" />
     <Compile Include="dal\AbsenceAccess.cs" />
     <Compile Include="dal\Access.cs" />
+    <Compile Include="dal\ResponsableAccess.cs" />
     <Compile Include="dal\PersonnelAccess.cs" />
     <Compile Include="model\Admin.cs" />
     <Compile Include="model\Responsable.cs" />

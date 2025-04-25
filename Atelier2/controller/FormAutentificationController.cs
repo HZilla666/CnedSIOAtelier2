@@ -1,15 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Atelier2.dal;
+using Atelier2.model;
 
 namespace Atelier2.controller
 {
     /// <summary>
-    /// Contrôleur de FrmAutentification
+    /// Contrôleur de FormAutentification
     /// </summary>
-    public class FormAtentificationController
+    public class FormAutentificationController
     {
+        /// <summary>
+        /// objet d'accès aux opérations possibles sur Responsable
+        /// </summary>
+        private readonly ResponsableAccess responsableAccess;
+
+        /// <summary>
+        /// Récupère l'acces aux données
+        /// </summary>
+        public FormAutentificationController()
+        {
+            responsableAccess = new ResponsableAccess();
+        }
+
+        /// <summary>
+        /// Vérifie l'autentification
+        /// </summary>
+        /// <param name="admin">objet contenant les informations de connexion</param>
+        /// <returns> vrai si les informations de connexion sont correctes</returns>
+        public Boolean ControleAutentification(Admin admin)
+        {
+            return responsableAccess.ControleAutentification(admin);
+        }
     }
 }

@@ -43,6 +43,7 @@
             this.BtnLogin.TabIndex = 0;
             this.BtnLogin.Text = "se connecter";
             this.BtnLogin.UseVisualStyleBackColor = true;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // TxtLogin
             // 
