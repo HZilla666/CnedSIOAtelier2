@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Atelier2.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,12 +16,15 @@ namespace Atelier2.view
     /// </summary>
     public partial class FormAbsence: Form
     {
+        private Personnel Personnel;
         /// <summary>
         /// construction des composants graphiques et appel des autres initialisations
         /// </summary>
-        public FormAbsence()
+        public FormAbsence(Personnel personnel)
         {
             InitializeComponent();
+            this.Personnel = personnel;
+            GrpAbscence.Text = Personnel.ToString();
         }
     }
 }

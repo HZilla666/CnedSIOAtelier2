@@ -37,14 +37,14 @@
             this.BtnCancel = new System.Windows.Forms.Button();
             this.BtnSave = new System.Windows.Forms.Button();
             this.TxtBoxName = new System.Windows.Forms.TextBox();
-            this.TextBoxMail = new System.Windows.Forms.TextBox();
-            this.TextBoxtel = new System.Windows.Forms.TextBox();
+            this.TxtBoxMail = new System.Windows.Forms.TextBox();
+            this.TxtBoxTel = new System.Windows.Forms.TextBox();
             this.TxtBoxSurname = new System.Windows.Forms.TextBox();
             this.LblSurname = new System.Windows.Forms.Label();
             this.LblMail = new System.Windows.Forms.Label();
             this.Lbltel = new System.Windows.Forms.Label();
             this.LblName = new System.Windows.Forms.Label();
-            this.CmbBoxSevice = new System.Windows.Forms.ComboBox();
+            this.CmbService = new System.Windows.Forms.ComboBox();
             this.BtnShowAbsence = new System.Windows.Forms.Button();
             this.GrpPersonnel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGVPersonnel)).BeginInit();
@@ -79,6 +79,7 @@
             this.BtnSupprimer.TabIndex = 2;
             this.BtnSupprimer.Text = "supprimer";
             this.BtnSupprimer.UseVisualStyleBackColor = true;
+            this.BtnSupprimer.Click += new System.EventHandler(this.BtnSupprimer_Click);
             // 
             // BtnModifier
             // 
@@ -88,6 +89,7 @@
             this.BtnModifier.TabIndex = 0;
             this.BtnModifier.Text = "modifier";
             this.BtnModifier.UseVisualStyleBackColor = true;
+            this.BtnModifier.Click += new System.EventHandler(this.BtnModifier_Click);
             // 
             // GrpAjouterPersonnel
             // 
@@ -95,14 +97,14 @@
             this.GrpAjouterPersonnel.Controls.Add(this.BtnCancel);
             this.GrpAjouterPersonnel.Controls.Add(this.BtnSave);
             this.GrpAjouterPersonnel.Controls.Add(this.TxtBoxName);
-            this.GrpAjouterPersonnel.Controls.Add(this.TextBoxMail);
-            this.GrpAjouterPersonnel.Controls.Add(this.TextBoxtel);
+            this.GrpAjouterPersonnel.Controls.Add(this.TxtBoxMail);
+            this.GrpAjouterPersonnel.Controls.Add(this.TxtBoxTel);
             this.GrpAjouterPersonnel.Controls.Add(this.TxtBoxSurname);
             this.GrpAjouterPersonnel.Controls.Add(this.LblSurname);
             this.GrpAjouterPersonnel.Controls.Add(this.LblMail);
             this.GrpAjouterPersonnel.Controls.Add(this.Lbltel);
             this.GrpAjouterPersonnel.Controls.Add(this.LblName);
-            this.GrpAjouterPersonnel.Controls.Add(this.CmbBoxSevice);
+            this.GrpAjouterPersonnel.Controls.Add(this.CmbService);
             this.GrpAjouterPersonnel.Location = new System.Drawing.Point(13, 258);
             this.GrpAjouterPersonnel.Name = "GrpAjouterPersonnel";
             this.GrpAjouterPersonnel.Size = new System.Drawing.Size(492, 129);
@@ -127,6 +129,7 @@
             this.BtnCancel.TabIndex = 3;
             this.BtnCancel.Text = "annuler";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // BtnSave
             // 
@@ -136,6 +139,7 @@
             this.BtnSave.TabIndex = 4;
             this.BtnSave.Text = "enregistrer";
             this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // TxtBoxName
             // 
@@ -144,19 +148,19 @@
             this.TxtBoxName.Size = new System.Drawing.Size(155, 20);
             this.TxtBoxName.TabIndex = 8;
             // 
-            // TextBoxMail
+            // TxtBoxMail
             // 
-            this.TextBoxMail.Location = new System.Drawing.Point(271, 20);
-            this.TextBoxMail.Name = "TextBoxMail";
-            this.TextBoxMail.Size = new System.Drawing.Size(166, 20);
-            this.TextBoxMail.TabIndex = 7;
+            this.TxtBoxMail.Location = new System.Drawing.Point(271, 20);
+            this.TxtBoxMail.Name = "TxtBoxMail";
+            this.TxtBoxMail.Size = new System.Drawing.Size(166, 20);
+            this.TxtBoxMail.TabIndex = 7;
             // 
-            // TextBoxtel
+            // TxtBoxTel
             // 
-            this.TextBoxtel.Location = new System.Drawing.Point(271, 46);
-            this.TextBoxtel.Name = "TextBoxtel";
-            this.TextBoxtel.Size = new System.Drawing.Size(166, 20);
-            this.TextBoxtel.TabIndex = 6;
+            this.TxtBoxTel.Location = new System.Drawing.Point(271, 46);
+            this.TxtBoxTel.Name = "TxtBoxTel";
+            this.TxtBoxTel.Size = new System.Drawing.Size(166, 20);
+            this.TxtBoxTel.TabIndex = 6;
             // 
             // TxtBoxSurname
             // 
@@ -201,13 +205,13 @@
             this.LblName.TabIndex = 1;
             this.LblName.Text = "nom";
             // 
-            // CmbBoxSevice
+            // CmbService
             // 
-            this.CmbBoxSevice.FormattingEnabled = true;
-            this.CmbBoxSevice.Location = new System.Drawing.Point(271, 72);
-            this.CmbBoxSevice.Name = "CmbBoxSevice";
-            this.CmbBoxSevice.Size = new System.Drawing.Size(166, 21);
-            this.CmbBoxSevice.TabIndex = 0;
+            this.CmbService.FormattingEnabled = true;
+            this.CmbService.Location = new System.Drawing.Point(271, 72);
+            this.CmbService.Name = "CmbService";
+            this.CmbService.Size = new System.Drawing.Size(166, 21);
+            this.CmbService.TabIndex = 0;
             // 
             // BtnShowAbsence
             // 
@@ -217,6 +221,7 @@
             this.BtnShowAbsence.TabIndex = 3;
             this.BtnShowAbsence.Text = "afficher les absence";
             this.BtnShowAbsence.UseVisualStyleBackColor = true;
+            this.BtnShowAbsence.Click += new System.EventHandler(this.BtnShowAbsence_Click);
             // 
             // FormPersonnel
             // 
@@ -247,14 +252,14 @@
         private System.Windows.Forms.Label LblMail;
         private System.Windows.Forms.Label Lbltel;
         private System.Windows.Forms.TextBox TxtBoxName;
-        private System.Windows.Forms.TextBox TextBoxMail;
-        private System.Windows.Forms.TextBox TextBoxtel;
+        private System.Windows.Forms.TextBox TxtBoxMail;
+        private System.Windows.Forms.TextBox TxtBoxTel;
         private System.Windows.Forms.TextBox TxtBoxSurname;
         private System.Windows.Forms.Button BtnCancel;
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.Button BtnShowAbsence;
         private System.Windows.Forms.DataGridView DGVPersonnel;
         private System.Windows.Forms.Label LblService;
-        private System.Windows.Forms.ComboBox CmbBoxSevice;
+        private System.Windows.Forms.ComboBox CmbService;
     }
 }
