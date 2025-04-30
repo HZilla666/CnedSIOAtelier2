@@ -17,7 +17,11 @@ namespace Atelier2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAutentification());
+            FormAutentification auth = new FormAutentification();
+            if (auth.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new FormPersonnel());
+            }
         }
     }
 }

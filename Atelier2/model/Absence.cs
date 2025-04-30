@@ -18,9 +18,9 @@ namespace Atelier2.model
         /// <param name="datedebut"></param>
         /// <param name="datefin"></param>
         /// <param name="motif"></param>
-        public Absence(int idpersonnel, string datedebut, string datefin,Motif motif)
+        public Absence(Personnel personnel, DateTime datedebut, DateTime datefin,Motif motif)
         {
-            this.IdPersonnel = idpersonnel;
+            this.Personnel = personnel;
             this.DateDebut = datedebut;
             this.DateFin = datefin;
             this.Motif = motif;
@@ -29,17 +29,17 @@ namespace Atelier2.model
         /// <summary>
         /// Identifiant unique du personnel concerné par l'absence.
         /// </summary>
-        public int IdPersonnel { get; set; }
+        public Personnel Personnel { get; set; }
 
         /// <summary>
         /// Date de début de l'absence (au format string, à convertir idéalement en DateTime).
         /// </summary>
-        public string DateDebut { get; set; }
+        public DateTime DateDebut { get; set; }
 
         /// <summary>
         /// Date de fin de l'absence (au format string, à convertir idéalement en DateTime).
         /// </summary>
-        public string DateFin { get; set; }
+        public DateTime DateFin { get; set; }
 
         /// <summary>
         /// Motif de l'absence, représenté par un objet de type Motif.

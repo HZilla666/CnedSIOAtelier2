@@ -58,8 +58,8 @@ namespace Atelier2.view
                 Admin admin = new Admin(login, pwd);
                 if (controller.ControleAutentification(admin))
                 {
-                    FormPersonnel frm = new FormPersonnel();
-                    frm.ShowDialog();
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
                 }
                 else
                 {

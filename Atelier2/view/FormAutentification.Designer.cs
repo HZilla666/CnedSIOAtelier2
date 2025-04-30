@@ -37,7 +37,7 @@
             // 
             // BtnLogin
             // 
-            this.BtnLogin.Location = new System.Drawing.Point(239, 46);
+            this.BtnLogin.Location = new System.Drawing.Point(242, 53);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(96, 23);
             this.BtnLogin.TabIndex = 0;
@@ -56,8 +56,10 @@
             // 
             this.TxtPwd.Location = new System.Drawing.Point(104, 53);
             this.TxtPwd.Name = "TxtPwd";
+            this.TxtPwd.PasswordChar = '*';
             this.TxtPwd.Size = new System.Drawing.Size(100, 20);
             this.TxtPwd.TabIndex = 2;
+            this.TxtPwd.UseSystemPasswordChar = true;
             // 
             // label1
             // 
