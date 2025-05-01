@@ -60,10 +60,6 @@ namespace Atelier2.view
         {
             controller = new FormAbsenceController();
             GrpAbsence.Text = "Absence pour " + Personnel.Prenom + " " + Personnel.Nom;
-            DtpStart.Format = DateTimePickerFormat.Custom;
-            DtpStart.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            DtpEnd.Format = DateTimePickerFormat.Custom;
-            DtpEnd.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             RemplirListeAbsences();
             RemplirListeMotifs();
             EnCourseModifAbsence(false);
@@ -157,15 +153,30 @@ namespace Atelier2.view
                 }
                 else
                 {
-                    Absence absence = new Absence(this.Personnel, DtpStart.Value, DtpEnd.Value, motif);
-                    controller.AddAbsence(absence);
+                    List<Absence> absences = (List<Absence>)bdgAbsence.DataSource;
+                    if (absences.Any(a => a.DateDebut == DtpStart.Value))
+                    {
+                        MessageBox.Show("Il y a déjà une absence à cette date.", "Information");
+                    }
+                    else
+                    {
+                        Absence absence = new Absence(this.Personnel, DtpStart.Value, DtpEnd.Value, motif);
+                        controller.AddAbsence(absence);
+                    }
                 }
                 RemplirListeAbsences();
                 EnCourseModifAbsence(false);
             }
             else
             {
-                MessageBox.Show("Tous les champs doivent être remplis.", "Information");
+                if (DtpStart.Value > DtpEnd.Value)
+                {
+                    MessageBox.Show("La date de fin postérieure à la date de début.", "Information");
+                }
+                else
+                {
+                    MessageBox.Show("Tous les champs doivent être remplis.", "Information");
+                }
             }
         }
 

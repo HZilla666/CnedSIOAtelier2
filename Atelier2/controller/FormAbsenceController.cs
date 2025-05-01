@@ -71,6 +71,7 @@ namespace Atelier2.controller
         /// Demande de modification d'un développeur
         /// </summary>
         /// <param name="absence">objet absence à modifier</param>
+        /// <param name="oldDateDebut">ancienne date à utiliser en clé primaire</param>
         public void UpdateAbsence(Absence absence, DateTime oldDateDebut)
         {
             absenceAccess.UpdateAbsence(absence, oldDateDebut);

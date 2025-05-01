@@ -180,7 +180,7 @@
             // 
             // DtpEnd
             // 
-            this.DtpEnd.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.DtpEnd.CustomFormat = "";
             this.DtpEnd.Location = new System.Drawing.Point(86, 45);
             this.DtpEnd.MinDate = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
             this.DtpEnd.Name = "DtpEnd";

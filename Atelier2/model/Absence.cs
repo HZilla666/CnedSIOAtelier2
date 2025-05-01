@@ -14,7 +14,7 @@ namespace Atelier2.model
         /// <summary>
         /// Valorise les propriétés
         /// </summary>
-        /// <param name="idpersonnel"></param>
+        /// <param name="personnel"></param>
         /// <param name="datedebut"></param>
         /// <param name="datefin"></param>
         /// <param name="motif"></param>

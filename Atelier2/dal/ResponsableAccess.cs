@@ -28,8 +28,7 @@ namespace Atelier2.dal
         /// <summary>
         /// Controle si l'utillisateur a le droit de se connecter (login et pwd)
         /// </summary>
-        /// <param name="login"></param>
-        /// <param name="pwd"></param>
+        /// <param name="admin">objet contenant les identifiants</param>
         /// <returns>vrai si les identifiants de connexion sont bons </returns>
         public Boolean ControleAutentification(Admin admin)
         {

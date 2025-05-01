@@ -119,6 +119,7 @@ namespace Atelier2.dal
         /// Demande de modification d'un absence
         /// </summary>
         /// <param name="absence">objet absence à modifier</param>
+        /// <param name="oldDateDebut">ancienne date à utiliser en clé primaire</param>
         public void UpdateAbsence(Absence absence, DateTime oldDateDebut)
         {
             if (access.Manager != null)
